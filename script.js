@@ -1,20 +1,3 @@
-const arrows = document.querySelectorAll('.down-arrow');
-
-arrows.forEach((arrow) => {
-    const toggleFooterSection = () => {
-        const footerNav = arrow.closest('.footer-nav');
-        if (!footerNav) return;
-
-        const footerList = footerNav.nextElementSibling;
-        if (!footerList || !footerList.classList.contains('footer-elements')) return;
-
-        const isVisible = footerList.classList.toggle('show-footer');
-
-        arrow.style.transform = isVisible ? 'rotate(180deg)' : 'rotate(0deg)';
-    };
-    arrow.addEventListener('click', toggleFooterSection);
-});
-
 const menuToggle = document.getElementById("menu-toggle");
 const mobileMenu = document.getElementById("mobile-menu");
 const closeMenu = document.getElementById("close-menu");
