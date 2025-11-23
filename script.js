@@ -1,7 +1,22 @@
+const downArrows = document.querySelectorAll(".down-arrow");
 const menuToggle = document.getElementById("menu-toggle");
 const mobileMenu = document.getElementById("mobile-menu");
 const closeMenu = document.getElementById("close-menu");
 const container = document.getElementById("container");
+
+downArrows.forEach((arrow) => {
+    const toggleFooterSection = () => {
+        const footerNav = arrow.closest(".footer-nav");
+        if (!footerNav) return;
+
+        const footerList = footerNav.nextElementSibling;
+        const isVisible = footerList.classList.toggle("show-footer");
+        
+        arrow.style.transform = isVisible ? 'rotate(180deg)' : 'rotate(0deg)';
+    }
+    arrow.addEventListener("click", toggleFooterSection);
+})
+
 
 menuToggle.addEventListener("click", () => {
     menuToggle.style.display = "none";

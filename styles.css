@@ -9,7 +9,7 @@ body {
 }
 
 .nav-bar {
-    display:  flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding-block: 1.5rem;
@@ -546,7 +546,9 @@ img {
         margin-top: 0.5rem;
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.4s ease, opacity 0.3s ease;
+        transition:
+            max-height 0.4s ease,
+            opacity 0.3s ease;
         opacity: 0;
     }
 
@@ -578,7 +580,8 @@ img {
         height: 30px;
         cursor: pointer;
     }
-    .nav-list, .loc {
+    .nav-list,
+    .loc {
         display: none;
     }
 
@@ -622,7 +625,7 @@ img {
     .mobile-divider {
         margin-block: 2rem;
         border: 1px solid #ddd;
-        width: 90%;
+        width: 80%;
         margin-left: 2rem;
     }
 
@@ -719,7 +722,7 @@ img {
     .section-3-btn {
         margin-bottom: 2rem;
     }
-    
+
     .section-4-btn {
         margin-bottom: 2rem;
     }
@@ -791,7 +794,7 @@ img {
     .order {
         font-size: 15px;
     }
-    
+
     .mobile-heading {
         font-size: 24px;
         text-align: center;
@@ -811,9 +814,3 @@ img {
         margin-bottom: 0;
     }
 }
-
-
-
-
-
-
